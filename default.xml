@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="aosp"
+            fetch="https://android.googlesource.com"
+            revision="refs/tags/android-6.0.1_r72" />
+
+    <remote name="bb"
+            fetch="https://bitbucket.org/"
+            revision="master" />
+
+
+    <!-- Stock -->
+    <project path="arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="aosp" />
+    <project path="arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" remote="aosp" />
+    <project path="aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" remote="aosp" />
+
+    <!-- UberTC -->
+    <project path="ubertc-arm-eabi-4.9" name="DespairFactor/arm-eabi-4.9" remote="bb" revision="master" />
+    <project path="ubertc-arm-eabi-5.x" name="DespairFactor/arm-eabi-5.x" remote="bb" revision="master" />
+    <project path="ubertc-arm-eabi-6.x" name="DespairFactor/arm-eabi-6.x" remote="bb" revision="master" />
+    <project path="ubertc-arm-eabi-7.0" name="DespairFactor/arm-eabi-7.0" remote="bb" revision="master" />
+    <project path="ubertc-aarch64-eabi-4.9" name="DespairFactor/aarch64-linux-android-4.9" remote="bb" revision="master" />
+
+    <!-- Linaro -->
+    <project path="linaro-arm-eabi-4.9" name="DespairFactor/arm-eabi-4.9-linaro" remote="bb" revision="master" />
+    <project path="linaro-arm-eabi-5.x" name="DespairFactor/arm-eabi-5.x-linaro" remote="bb" revision="master" />
+    <project path="linaro-arm-eabi-6.x" name="DespairFactor/arm-eabi-6.x-linaro" remote="bb" revision="master" />
+</manifest>
